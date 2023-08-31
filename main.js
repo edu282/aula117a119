@@ -40,7 +40,7 @@ function gotResult(error, results)
         console.error(error);
     }
     console.log(results);
-    var result = resutls[0].label;
+    var result = results[0].label;
     document.getElementById('label').innerHTML = 'Nome: ' + result.replace('_', ' ');
 
     document.getElementById('confidence').innerHTML = 'Precisão: ' + Math.round(results[0].confidence * 100) + '%';
